@@ -6,7 +6,7 @@
 /*   By: kkoc <kkoc@student.42istanbul.com.tr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/29 21:28:44 by kkoc              #+#    #+#             */
-/*   Updated: 2026/09/29 21:57:51 by kkoc             ###   ########.fr       */
+/*   Updated: 2026/09/29 23:06:57 by kkoc             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ static int	check_specifier(const char specifier, va_list args)
 	else if (specifier == 'x' || specifier == 'X')
 		len += ft_puthex(va_arg(args, unsigned long), specifier);
 	else if (specifier == 'p')
-		len += ft_putptr(va_arg(args, unsigned long));
+		len += ft_putptr(va_arg(args, void *));
 	else if (specifier == '%')
 		len += ft_putchar('%');
 	else
