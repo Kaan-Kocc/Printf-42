@@ -24,7 +24,7 @@ static int	check_specifier(const char specifier, va_list args)
 	else if (specifier == 'd' || specifier == 'i')
 		len += ft_putnbr(va_arg(args, int));
 	else if (specifier == 'u')
-		len += ft_putunsigned(va_arg(args, unsigned int)); // HATALI
+		len += ft_putunsigned(va_arg(args, unsigned int));
 	else if (specifier == 'x' || specifier == 'X')
 		len += ft_puthex(va_arg(args, unsigned long), specifier);
 	else if (specifier == 'p')
