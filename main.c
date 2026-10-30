@@ -1,7 +1,7 @@
 #include <limits.h>
 #include <stdio.h>
 #include "ft_printf.h"
-
+// You dont need this file you can create your own main.c . This is just to test to see if there is a diffirence between the original and ft_printf.
 int	main(void)
 {
 	printf("\n===== CHAR =====\n");
